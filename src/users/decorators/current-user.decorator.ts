@@ -5,7 +5,5 @@ export const CurrentUser = createParamDecorator(
     const request = context.switchToHttp().getRequest();
     console.log('current user', request.currentUser);
     return request.currentUser;
-
-    // return request.user; // Assuming the user object is stored in the 'user' property of the request object
   },
 );
